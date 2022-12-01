@@ -60,4 +60,10 @@ public class Battleship {
         ProjectUtils.printMessage("Escape procedure initiated in Battleship class with " + escapePods + " escape pods");
 
     }
+    public class EscapePod{
+        private String EscapePod;
+    }
+    private class EscapePodTieFighter{
+        private String EscapePod;
+    }
 }
