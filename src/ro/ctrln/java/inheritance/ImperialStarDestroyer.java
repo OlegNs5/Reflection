@@ -2,16 +2,29 @@ package ro.ctrln.java.inheritance;
 
 import java.util.Objects;
 
-public class ImperialStarDestroyer extends Battleship{
+public class ImperialStarDestroyer extends Battleship {
+
     private int numberOfDecks;
 
-
-    public int getNumberOfDecks(){
+    public int getNumberOfDecks() {
         return numberOfDecks;
     }
-    public void setNumberOfDecks(int numberOfDecks){
+
+    public void setNumberOfDecks(int numberOfDecks) {
         this.numberOfDecks = numberOfDecks;
 
+    }
+
+    public ImperialStarDestroyer() {
+    }
+
+    public ImperialStarDestroyer(int numberOfDecks) {
+        this.numberOfDecks = numberOfDecks;
+    }
+
+    private ImperialStarDestroyer(String battleshipName, int numberOfDecks) {
+        this.battleshipName = battleshipName;
+        this.numberOfDecks = numberOfDecks;
     }
 
     @Override
