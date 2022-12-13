@@ -12,12 +12,12 @@ public class Battleship {
     private int battleshipCapacity;
 
                         //*** Constructor ***//
-//    public Battleship(){}
-//
-//    public Battleship(String battleshipName, int battleshipCapacity) {
-//        this.battleshipName = battleshipName;
-//        this.battleshipCapacity = battleshipCapacity;
-//    }
+    public Battleship(){}
+
+    public Battleship(String battleshipName, int battleshipCapacity) {
+        this.battleshipName = battleshipName;
+        this.battleshipCapacity = battleshipCapacity;
+    }
 
                         //*** getter ***//
     public String getBattleshipName() {
