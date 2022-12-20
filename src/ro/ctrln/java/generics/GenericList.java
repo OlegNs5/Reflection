@@ -36,7 +36,16 @@ public class GenericList<T> {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Index is out of range ! Index is :" + index + "and size is" + size);
         }
-        System.arraycopy(list, index+1, list, index, size -index);
+        System.arraycopy(list, index + 1, list, index, size - index);
         size--;
+    }
+
+    public boolean contains(T searchedElement) {
+        for (Object element : list) {
+            if (searchedElement.equals(element)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
